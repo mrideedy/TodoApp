@@ -4,7 +4,7 @@ This is a React Todo application that uses Redux for state management. To set up
 
 **Prerequisites**
 
-Node.js installed on your machine
+Node.js installed on your machine <br>
 npm (Node Package Manager) installed on your machine
 A code editor or IDE of your choice
 
