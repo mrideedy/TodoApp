@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// Import React from the react module
+import React from "react";
 
-function App() {
+// Import the Provider component from react-redux
+import { Provider } from "react-redux";
+
+// Import the store from the store file
+import store from "./store";
+
+// Import the Todo component from the Todo file
+import Todo from "./Todo";
+
+// Define the App component
+const App = () => {
+  // Return the JSX for the App component
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // Wrap the Todo component with the Provider component
+    // Pass the store to the Provider component
+    <Provider store={store}>
+      <Todo /> 
+    </Provider>
   );
-}
+};
 
+// Export the App component as the default export
 export default App;
